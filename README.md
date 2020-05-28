@@ -1,6 +1,6 @@
 # Getting Started
 
-Sample of how to use Speech Markdown https://speechmarkdown.org with Alexa Skills Kit (ASK) SDK.
+Sample of how to use Speech Markdown https://www.speechmarkdown.org with Alexa Skills Kit (ASK) SDK.
 
 All Text-to-Speech (TTS) strings are found in the `languageStrings.js` file.
 
