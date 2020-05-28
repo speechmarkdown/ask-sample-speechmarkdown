@@ -1,0 +1,17 @@
+{
+  "name": "ask-sample-speechmarkdown",
+  "version": "1.0.0",
+  "description": "Alexa Sample for Speech Markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Speech Markdown",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "^2.0.0",
+    "ask-sdk-model": "^1.0.0",
+    "i18next": "^19.4.5",
+    "speechmarkdown-js": "^1.1.0"
+  }
+}
