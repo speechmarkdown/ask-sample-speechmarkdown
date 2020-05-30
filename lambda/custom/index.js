@@ -170,7 +170,7 @@ const SpeechMarkdownResponseInterceptor = {
       if (response.outputSpeech && response.outputSpeech.ssml) {
         let speakOutput = response.outputSpeech.ssml;
         speakOutput = speakOutput.replace('<speak>', '').replace('</speak>', '');
-        speakOutput = speechMarkdown.toSSML(speakOutput);
+        response.outputSpeech.ssml = speechMarkdown.toSSML(speakOutput);
       }
 
       if (response.reprompt &&
@@ -179,7 +179,7 @@ const SpeechMarkdownResponseInterceptor = {
 
         let repromptOutput = response.reprompt.outputSpeech.ssml;
         repromptOutput = repromptOutput.replace('<speak>', '').replace('</speak>', '');
-        repromptOutput = speechMarkdown.toSSML(repromptOutput);
+        response.reprompt.outputSpeech.ssml = speechMarkdown.toSSML(repromptOutput);
       }
     }
   }
