@@ -1,10 +1,10 @@
 module.exports = {
     en: {
         translation: {
-            WELCOME_MSG: 'Hi, we will get started in (321)[char]. What\'s your name?',
+            WELCOME_MSG: 'Hi, we will get started in (321)[chars]. What\'s your name?',
             WELCOME_REPROMPT: 'Can you tell me your name?',
-            NAME_MSG: '#[voice:"Brian"] Hello ${nameSlot}. It\'s nice to meet you.',
-            HELLO_MSG: '(Hello World)[interjection] [1s] What\'s your name?',
+            NAME_MSG: '#[voice:"Brian"] Hello {{nameSlot}}. It\'s nice to meet you. Goodbye.',
+            HELLO_MSG: '(Wow)[interjection] [1s] What\'s your name?',
             HELLO_REPROMPT: 'Please [500ms] tell me your name.',
             HELP_MSG: 'You can introduce yourself by telling me your name. How can I help?',
             GOODBYE_MSG: 'Goodbye!',

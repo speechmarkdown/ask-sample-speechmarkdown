@@ -39,10 +39,10 @@ const MyNameIsIntentHandler = {
   handle(handlerInput) {
 
     const nameSlot = handlerInput.requestEnvelope.request.intent.slots.name.value;
-    const speechText = handlerInput.t('NAME_MSG');
+    const speechText = handlerInput.t('NAME_MSG', {nameSlot});
 
     return handlerInput.responseBuilder
-      .speak(speechText, { nameSlot: nameSlot })
+      .speak(speechText)
       .getResponse();
   },
 };
